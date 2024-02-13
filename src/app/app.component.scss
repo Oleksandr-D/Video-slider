@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  padding: 5px 100px;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    li{
+      list-style-type: none;
+      padding: 15px;
+      font-size: 18px;
+    }
+  }
+}
