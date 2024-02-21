@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'video_slider' title`, () => {
+  it(`should have the 'video-slider' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('video_slider');
+    expect(app.title).toEqual('video-slider');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, video_slider');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, video-slider');
   });
 });
