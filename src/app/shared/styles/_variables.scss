@@ -1,0 +1,25 @@
+@font-face {
+   font-family: 'Jura';
+   src: url('../../../assets/fonts/Jura/static/Jura-SemiBold.ttf');
+ }
+ 
+ @font-face {
+   font-family: 'Jura-bold';
+   src: url('../../../assets/fonts/Jura/static/Jura-Bold.ttf');
+ }
+ 
+ @font-face {
+   font-family: 'Montserrat_Alternates-bold';
+   src: url('../../../assets/fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf');
+ }
+ 
+ @font-face {
+   font-family: 'Montserrat_Alternates';
+   src: url('../../../assets/fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf');
+ }
+
+$font-main:'Jura',sans-serif;
+$fontBold-main:'Jura-bold',sans-serif;
+$fontBold-sec:'Montserrat_Alternates-bold',sans-serif;
+$font-sec: 'Montserrat_Alternates',sans-serif;
+$colour-text-main: rgb(239, 239, 255);

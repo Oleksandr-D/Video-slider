@@ -1,0 +1,35 @@
+@import '../../shared/styles/variables';
+
+header {
+  position: sticky;
+  background-color: rgba(11, 11, 11, 0.812);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+nav{
+   ul{
+      display: flex;
+      li{
+         color: $colour-text-main;
+         font-family: $fontBold-main;
+         font-size: 18px;
+      }
+      li:first-child {
+         margin-right: 10px;
+      }
+   }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  h1 {
+    color: $colour-text-main;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: $fontBold-sec;
+  }
+}

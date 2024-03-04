@@ -1,0 +1,52 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   border: 0;
+ }
+ 
+ *::before,
+ *::after {
+   box-sizing: border-box;
+ }
+ 
+ body, h1, h2, h3, p, ul, li, a, button, input, select, textarea {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+   box-sizing: border-box;
+   border-radius: 0px;
+ }
+ 
+ ol,
+ ul {
+   list-style: none;
+ }
+ 
+ table {
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+ 
+ a {
+   background-color: transparent;
+   text-decoration: none;
+   color: inherit;
+   cursor: pointer;
+ }
+ 
+ b,
+ strong {
+   font-weight: bolder;
+ }
+ 
+ img {
+   border-style: none;
+ }
+ 
+ address{
+   font-style: inherit;
+ }
