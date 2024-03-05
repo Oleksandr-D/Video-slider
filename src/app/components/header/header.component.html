@@ -1,11 +1,17 @@
 <header>
-   <nav>
-      <ul>
-         <li>Home</li>
-         <li>About</li>
-      </ul>
-   </nav>
-   <div class="logo">
-      <h1>Video Slider</h1>
-   </div>
+  <nav>
+    <ul>
+      <li>
+        <a [routerLink]="['/']" routerLinkActive="route-active" [routerLinkActiveOptions]="{exact: true}"
+          aria-current="page">Home</a>
+      </li>
+      <li>
+        <a [routerLink]="['/about']" routerLinkActive="route-active" [routerLinkActiveOptions]="{exact: true}"
+          aria-current="page">About</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="logo">
+    <h1>Video Slider</h1>
+  </div>
 </header>

@@ -1,25 +1,51 @@
 @import '../../shared/styles/variables';
 
 header {
+  height: 80px;
   position: sticky;
-  background-color: rgba(11, 11, 11, 0.812);
+  top: 0;
+  background-color: $colour-background;
   display: flex;
   justify-content: space-between;
-  padding: 10px 50px;
+  padding: 0px 50px;
+  border-bottom: 2px solid $colour-text-main;
 }
 
-nav{
-   ul{
-      display: flex;
-      li{
-         color: $colour-text-main;
-         font-family: $fontBold-main;
-         font-size: 18px;
-      }
-      li:first-child {
-         margin-right: 10px;
-      }
-   }
+nav {
+  display: flex;
+  align-items: center;
+
+  ul {
+    display: flex;
+
+    .route-active {
+      background-color: $colour-text-main;
+      color: $colour-background;
+    }
+
+    a {
+      width: 80px;
+      text-align: center;
+      display: block;
+      color: $colour-text-main;
+      font-family: $fontBold-main;
+      font-size: 14px;
+      padding: 8px;
+      border: 2px solid $colour-text-main;
+      text-transform: uppercase;
+      transition-duration: 0.3s;
+    }
+
+    li:first-child {
+      margin-right: 10px;
+    }
+
+    a:hover {
+      background-color: $colour-text-main;
+      color: rgba(11, 11, 11, 0.812);
+      cursor: pointer;
+    }
+  }
 }
 
 .logo {
