@@ -8,7 +8,6 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 0px 50px;
-  border-bottom: 2px solid $colour-text-main;
 }
 
 nav {
@@ -25,12 +24,13 @@ nav {
 
     a {
       width: 80px;
-      text-align: center;
-      display: block;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: $colour-text-main;
       font-family: $fontBold-main;
       font-size: 14px;
-      padding: 8px;
       border: 2px solid $colour-text-main;
       text-transform: uppercase;
       transition-duration: 0.3s;
@@ -54,8 +54,10 @@ nav {
 
   h1 {
     color: $colour-text-main;
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: 100;
     text-transform: uppercase;
     font-family: $fontBold-sec;
+    font-weight: bolder;
   }
 }

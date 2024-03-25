@@ -4,23 +4,20 @@
  }
  
  @font-face {
-   font-family: 'Jura-bold';
-   src: url('../../../assets/fonts/Jura/static/Jura-Bold.ttf');
+   font-family: 'XanhMono';
+   src: url('../../../assets/fonts/Xanh_Mono/XanhMono-Regular.ttf');
  }
  
  @font-face {
-   font-family: 'Montserrat_Alternates-bold';
-   src: url('../../../assets/fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf');
- }
- 
- @font-face {
-   font-family: 'Montserrat_Alternates';
-   src: url('../../../assets/fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf');
- }
+  font-family: 'slackey';
+  src: url('../../../assets/fonts/Slackey/Slackey-Regular.ttf');
+}
+
 
 $font-main:'Jura',sans-serif;
-$fontBold-main:'Jura-bold',sans-serif;
-$fontBold-sec:'Montserrat_Alternates-bold',sans-serif;
-$font-sec: 'Montserrat_Alternates',sans-serif;
-$colour-text-main: rgb(239, 239, 255);
-$colour-background:rgba(10, 10, 10, 0.79);
+$fontBold-main:'XanhMono',sans-serif;
+$fontBold-sec:'slackey',sans-serif;
+$colour-text-main: rgb(247, 214, 115);
+$colour-text-second: rgb(235, 235, 235);
+$colour-background:rgba(10, 10, 10, 0.9);
+$colour-background-page:rgba(10, 10, 10, 0.85);
