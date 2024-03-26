@@ -42,6 +42,42 @@
 .second-row {
   display: flex;
   margin-top: 20px;
+  position: relative;
+}
+
+.nav-arrow,
+.arrow {
+  position: absolute;
+  top: 145px;
+  width: 45px;
+  height: 50px;
+  background-image: $colour-lingradient;
+  border-radius: 10px;
+
+  p {
+    position: absolute;
+    top: 13px;
+    left: 8px;
+    width: 45px;
+    height: 50px;
+    background-image: url(../../../assets/icons/arrow_back_ios_new_FILL0_wght400_GRAD0_opsz24.svg);
+    z-index: 1;
+    background-repeat: no-repeat;
+  }
+}
+
+.left {
+  left: -15px;
+}
+
+.right {
+  right: -15px;
+
+  p {
+    left: 13px;
+    background-image: url(../../../assets/icons/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.svg);
+  }
+
 }
 
 .slide {
