@@ -9,11 +9,19 @@
     </p>
   </section>
   <section class="sliders">
+    <ng-container *ngIf="isOpen">
+      <div class="modal-wraper">
+        <div class="modal-widow">
+          <button class="close" (click)="modalToggle()"></button>
+          <div class="video"></div>
+        </div>
+      </div>
+    </ng-container>
     <div class="first-row">
       <div class="nav-arrow left">
         <p></p>
       </div>
-      <div class="slide one"></div>
+      <div class="slide one" (click)="modalToggle()"></div>
       <div class="slide two"></div>
       <div class="slide three"></div>
       <div class="slide four"></div>

@@ -91,3 +91,38 @@
 .guid {
   padding: 20px;
 }
+
+
+
+
+.modal-wraper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: $colour-background-page;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-widow{
+  width: 60%;
+  height: 70%;
+  background-color: $colour-text-main;
+  position: relative;
+  .close{
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 64px;
+    height: 64px;
+   background-image: url(../../../assets/icons/delete.png);
+   background-repeat: no-repeat;
+   text-align: center;
+  }
+}
