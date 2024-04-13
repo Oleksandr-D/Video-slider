@@ -53,7 +53,7 @@
   height: 50px;
   background-image: $colour-lingradient;
   border-radius: 10px;
-
+  z-index: 1;
   p {
     position: absolute;
     top: 13px;
@@ -63,6 +63,7 @@
     background-image: url(../../../assets/icons/arrow_back_ios_new_FILL0_wght400_GRAD0_opsz24.svg);
     z-index: 1;
     background-repeat: no-repeat;
+  
   }
 }
 
@@ -81,19 +82,27 @@
 }
 
 .slide {
-  height: 320px;
+  height: 300px;
   width: 300px;
   box-shadow: $colour-text-main 0px 2px 5px -1px, $colour-text-main 0px 1px 3px -1px;
   border-radius: 10px;
   margin: 10px;
+  position: relative;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
 }
 
 .guid {
   padding: 20px;
 }
-
-
-
 
 .modal-wraper {
   position: fixed;
@@ -110,19 +119,20 @@
   align-items: center;
 }
 
-.modal-widow{
+.modal-widow {
   width: 60%;
   height: 70%;
   background-color: $colour-text-main;
   position: relative;
-  .close{
+
+  .close {
     position: absolute;
     top: -40px;
     right: -40px;
     width: 64px;
     height: 64px;
-   background-image: url(../../../assets/icons/delete.png);
-   background-repeat: no-repeat;
-   text-align: center;
+    background-image: url(../../../assets/icons/delete.png);
+    background-repeat: no-repeat;
+    text-align: center;
   }
 }

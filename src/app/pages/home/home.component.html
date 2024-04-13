@@ -21,8 +21,11 @@
       <div class="nav-arrow left">
         <p></p>
       </div>
-      <div class="slide one" (click)="modalToggle()"></div>
-      <div class="slide two"></div>
+      <div class="slide one" (click)="modalToggle()">
+        <iframe src="https://player.vimeo.com/video/824804225" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="slide two" #vimeoFrame data-vimeo-id="824804225">
+      </div>
       <div class="slide three"></div>
       <div class="slide four"></div>
       <div class="nav-arrow right">
