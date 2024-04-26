@@ -8,7 +8,7 @@
       <b>Hit the play</b> button and unlock a world of video emotions.
     </p>
   </section>
-  <section class="sliders">
+  <section class="carousel">
     <ng-container *ngIf="isOpen">
       <div class="modal-wraper">
         <div class="modal-widow">
@@ -17,32 +17,23 @@
         </div>
       </div>
     </ng-container>
-    <div class="first-row">
-      <div class="nav-arrow left">
-        <p></p>
-      </div>
-      <div class="slide one" (click)="modalToggle()">
+    <div class="carousel-container"  #carouselContainer>
+      <div class="slide one" (click)="modalToggle()">1
         <iframe src="https://player.vimeo.com/video/824804225" frameborder="0" allowfullscreen></iframe>
       </div>
-      <div class="slide two" #vimeoFrame data-vimeo-id="824804225">
-      </div>
-      <div class="slide three"></div>
-      <div class="slide four"></div>
-      <div class="nav-arrow right">
-        <p></p>
-      </div>
+      <div class="slide two" #vimeoFrame (click)="modalToggle()">2</div>
+      <div class="slide three">3</div>
+      <div class="slide four">4</div>
+      <div class="slide five">5</div>
+      <div class="slide six">6</div>
+      <div class="slide seven">7</div>
+      <div class="slide eig">8</div>
     </div>
-    <div class="second-row">
-      <div class="arrow left">
-        <p></p>
-      </div>
-      <div class="slide five"></div>
-      <div class="slide six"></div>
-      <div class="slide seven"></div>
-      <div class="slide eig"></div>
-      <div class="arrow right">
-        <p></p>
-      </div>
+    <div class="nav-arrow right" (click)="scrollRight()">
+      <p></p>
+    </div>
+    <div class="nav-arrow left" (click)="scrollLeft()">
+      <p></p>
     </div>
   </section>
   <div class="guid">

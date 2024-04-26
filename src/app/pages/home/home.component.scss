@@ -1,6 +1,7 @@
 @import '../../shared/styles/variables';
 
 .container {
+  height: 100vh;
   background-color: $colour-background-page;
   color: $colour-text-second;
   font-family: $fontBold-main;
@@ -38,15 +39,21 @@
   }
 }
 
-.first-row,
-.second-row {
+.carousel {
   display: flex;
-  margin-top: 20px;
+  overflow: hidden;
+  width: 84%;
   position: relative;
+  margin: 20px auto;
 }
 
-.nav-arrow,
-.arrow {
+.carousel-container{
+  display: flex;
+  margin-top: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.nav-arrow{
   position: absolute;
   top: 145px;
   width: 45px;
@@ -54,6 +61,10 @@
   background-image: $colour-lingradient;
   border-radius: 10px;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
   p {
     position: absolute;
     top: 13px;
@@ -67,12 +78,9 @@
   }
 }
 
-.left {
-  left: -15px;
-}
 
 .right {
-  right: -15px;
+  right: 0px;
 
   p {
     left: 13px;
@@ -82,13 +90,16 @@
 }
 
 .slide {
-  height: 300px;
   width: 300px;
+  height: 300px;
   box-shadow: $colour-text-main 0px 2px 5px -1px, $colour-text-main 0px 1px 3px -1px;
   border-radius: 10px;
   margin: 10px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   iframe {
     position: absolute;
